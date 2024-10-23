@@ -1,0 +1,58 @@
+/* Board.css */
+.board-container {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 20px;
+    overflow-y: auto; /* Allow the entire board to be scrollable */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.board-column {
+    background-color: #f4f5f8;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-left span {
+    font-weight: 500;
+}
+
+.ticket-count {
+    color: #6b6f76;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-item, .more-options {
+    cursor: pointer;
+    color: #6b6f76;
+}
+
+.column-tickets {
+    padding: 0 10px;
+    /* Removed max-height and overflow-y properties */
+}
